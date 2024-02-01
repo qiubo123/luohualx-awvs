@@ -15,5 +15,13 @@
 <code>python luohualx-awvs.py -dtc</code><br>
 <strong>批量导入扫描目标,支持txt和csv两种格式</strong><br>
 <code>python luohualx-awvs.py -f targets.txt</code><br>
-<p>注意：单个添加或批量添加扫描目标后都会询问是否直接扫描，选Y/y/YES/yes都会直接开启扫描任务,其他任意输入则终止脚本</p><br>
-<p>扫描完成后需要先生成扫描的报告，生成报告需要一定的时间，等全部生成后再进行下载报告的操作</p><br>
+<p>注意：单个添加或批量添加扫描目标后都会询问是否直接扫描，选Y/y/YES/yes都会直接开启扫描任务,其它任意输入则终止脚本</p>
+<p>扫描完成后需要先生成扫描的报告，生成报告需要一定的时间，等全部生成后再进行下载报告的操作</p>
+<strong>导出target_id、scan_id、report_id方便后续单个操作</strong><br>
+<code>python luohualx-awvs.py -sall</code><br>
+<strong>导出资产信息</strong><br>
+<code>python luohualx-awvs.py -stc</code><br>
+<strong>扫描完毕后，生成所有的报告</strong><br>
+<code>python luohualx-awvs.py -car</code><br>
+<strong>所有报告生成好了之后，下载所有报告</strong><br>
+<code>python luohualx-awvs.py -eap</code><br>
