@@ -7,3 +7,4 @@ def main():
 	for f in folders:
 		if not os.path.exists(f):
 			os.makedirs(f)
+	print('[+]初始化完成！')

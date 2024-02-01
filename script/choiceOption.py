@@ -10,11 +10,11 @@ import script.add_file_target as add_file_target
 import script.delete_one_task as delete_one_task
 import script.delete_all_task as delete_all_task
 import script.createReport as createReport
-import script.ceshi as ceshi
 import script.download_template as template
 import script.start_one_scan as start_one_scan
 import script.awvsConfiguration as awvsConfig
 import script.awvsStats as stats
+import script.initFolder as initFolder
 
 def main():
 	banner.main()
@@ -22,6 +22,8 @@ def main():
 	if vars(args)['target_number'] == True:
 		stats.main()
 		exit()
+	if vars(args)['initfolder'] == True:
+		initFolder.main()
 	if vars(args)['download_template_csv'] == True:#生成模板文件
 		template.main()
 	if vars(args)['start_one_scan'] != None:#启动一个扫描

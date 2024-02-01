@@ -3,6 +3,7 @@
 import argparse
 def main():
 	parser = argparse.ArgumentParser(description='帮助信息！如有问题可联系胖胖小飞侠解决!欢迎使用luohualx系列脚本！')
+	parser.add_argument('-i','--initfolder',action='store_true',default=False,help='初始化文件夹')
 	parser.add_argument('-aot','--add-one-target',type=str,required=False,help='添加扫描目标')
 	parser.add_argument('-ds','--desc',type=str,required=False,help='目标描述,配合“-a”使用')
 	parser.add_argument('-dti','--delete-target-id',type=str,required=False,help='待删除的target-id')
