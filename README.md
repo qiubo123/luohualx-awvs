@@ -6,9 +6,11 @@
 <h2>二、用法</h2>
 <h3>1、安装模块</h3>
 <code>pip install -r requirements.txt</code>
-<h3>2、修改配置文件</h3>
+<h3>2、初始化文件夹</h3>
+<code>python luohualx-awvs.py -i</code>
+<h3>3、修改配置文件</h3>
 <p>修改config目录下的config.conf文件配置，把awvs的url和apikey替换成自己的</p>
-<h3>3、常见用法</h3>
+<h3>4、常见用法</h3>
 <strong>添加单个扫描目标</strong><br>
 <code>python luohualx-awvs.py -aot http://www.ttttest.com -ds 资产描述</code><br>
 <strong>下载扫描目标样例表</strong><br>
